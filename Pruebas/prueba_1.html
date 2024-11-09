@@ -1,0 +1,81 @@
+<!--PRUEBA VIDEO HTML:Página entrada juego
+Queremos poner a prueba lo que has aprendido y para ello realizaremos el siguiente ejercicio:
+
+Realizar un formulario de entrada con HTML para poder recoger los gustos de los jugadores de videojuegos. Campos:
+
+Nombre (texto)
+
+Email (email)
+
+Edad (select con franjas)
+
+Plataforma en la que se juega (select playstation-xbox-nintendo-pc-mobile)
+
+Videojuego más jugado (text)
+
+Boton submit
+
+Incluir un logo
+
+Incluir HTML5-->.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBA 1</title>
+    <link rel="stylesheet" href="/Pruebas/css/prueba_1.css">
+</head>
+<body>
+    <header>
+        <img src="/MASTERDOTS/img/mastermind-logo.png" alt="mastermind-logo">
+    </header>
+    <main>
+        <form action="#">
+           <div class="formulario">
+            <div class="itemform">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="itemform">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="itemform">
+                <label for="edad">Edad</label>
+                <select name="edad" id="edad">
+                    <option value="">--Elige tu rango de edad--</option>
+                    <option value="">10-16</option>
+                    <option value="">17-23</option>
+                    <option value="">23-29</option>
+                    <option value="">30-36</option>
+                    <option value="">36-42</option>
+                    <option value="">+42</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <label for="plataforma">Plataforma</label>
+                <select name="edad" id="edad">
+                    <option value="">--Donde juegas--</option>
+                    <option value="">Playstation</option>
+                    <option value="">Xbox</option>
+                    <option value="">Nintendo</option>
+                    <option value="">Pc</option>
+                    <option value="">Mobile</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <label for="videojuego">Videojuego más jugado</label>
+                <input type="text" name="videojuego" id="videojuego">
+            </div>
+            <div class="submit">
+                <input type="submit">
+            </div>
+           </div>
+        </form>
+    </main>
+    <footer>
+        <p>PRUEBA VIDEO HTML:Página entrada juego</p>
+    </footer>
+</body>
+</html>

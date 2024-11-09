@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CABECERA*/
+header{
+   text-align: center;
+   height: 10%;
+   
+}
+
+
+/*MAIN*/
+form{
+    margin: 0 auto;
+    text-align: center;
+    width: 80vh;
+    height: 75vh;
+    padding-top: 4rem;
+}
+
+.formulario{
+   padding: 1rem;
+   border: 3px solid black;
+   border-radius: 10px;
+
+}
+
+.itemform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.2rem;
+    
+}
+
+.itemform label{
+    text-align: left;
+}
+
+.submit{
+    text-align: right;
+    margin-top: 1rem;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #d03b8a;
+    height: 5%;
+}
+
+p{
+    text-align: center;
+    padding: 0.5rem;
+}
