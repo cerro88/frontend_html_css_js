@@ -1,0 +1,11 @@
+/*Queremos poner a prueba lo que has aprendido y para ello seguiremos con el ejercicio planteado en el vídeo anterior. 
+En este caso añadiendo todo el diseño a nuestro formulario:
+
+Elegiremos un color de fondo y diferentes colores para borders e inputs
+Elegiremos también un font desde google fonts
+Añadiremos paddings y margins adecuados para que nuestro formulario se vea centrado igual que hemos hecho con el vídeo
+No os olvidéis de usar Flex para que el diseño resulte mucho más sencillo*/
+
+body{
+    font-family: "Kode Mono", monospace;
+}
