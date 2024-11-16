@@ -9,3 +9,44 @@ No os olvidéis de usar Flex para que el diseño resulte mucho más sencillo*/
 body{
     font-family: "Kode Mono", monospace;
 }
+
+header, footer{
+    text-align: center;
+    margin: 30px auto 0 auto;
+    width: 300px;
+}
+
+main{
+    margin: 30px auto 0 auto;
+    width: 300px;
+}
+
+form, .itemform{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+}
+
+label{
+    margin: 10px 0 0 0;
+}
+
+input,select{
+    display: inline;
+    font-family: "Kode Mono", monospace;
+    width: 300px;
+    border: 1px solid #ced4de;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    background-color: #fd0c49;
+    color: #fff;
+    margin: 20px 0 0 0;
+
+}
+
+footer{
+    font-size: 15px;
+}
