@@ -20,7 +20,6 @@ console.log(nameInput.value);
 // Imprimir todo el elemento input en la consola
 console.log(nameInput);
 
-
 //Capturar el elemento con ID 'email'
 const emailInput = document.getElementById('email');
 // Imprimir el tipo de nodo 
@@ -38,5 +37,30 @@ const edadInput = document.getElementById('edad');
 console.log(edadInput.nodeType);
 // Imprimir todo el elemento input en la consola
 console.log(edadInput);
-console.log(nameInput.options[nameInput.selectedIndex].text)
+// Imprimir el texto de la opción 3
+console.log(edadInput.options[2].text);
+//Imprimir el texto del elemento select
+console.log(edadInput.options[edadInput.selectedIndex].text)
 
+//Capturar el elemento con ID 'plataforma'
+const plataformaInput = document.getElementById('plataforma');
+// Imprimir el tipo de nodo 
+console.log(plataformaInput.nodeType);
+// Imprimir todo el elemento input en la consola
+console.log(plataformaInput);
+// Imprimir el texto de la opción 4
+console.log(plataformaInput.options[3].text);
+//Imprimir el texto del elemento select
+console.log(plataformaInput.options[plataformaInput.selectedIndex].text)
+
+
+// Capturar el elemento con ID 'videojuego'
+const videojuegoInput = document.getElementById('videojuego');
+// Imprimir el tipo de nodo 
+console.log(videojuegoInput.nodeType);
+// Asignar un valor al input
+videojuegoInput.value = "Counter";
+// Imprimir el valor del input
+console.log(videojuegoInput.value);
+// Imprimir todo el elemento input en la consola
+console.log(videojuegoInput);
