@@ -18,4 +18,7 @@ console.log(tamanoInput.value);
 console.log(tamanoInput.options[tamanoInput.selectedIndex].text);
 
 
-
+//Ejemplo sobre eventos
+function test(){
+    console.log("EVENTO SOBRE RATÓN")
+}
