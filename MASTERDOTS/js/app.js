@@ -4,17 +4,18 @@
 */
 
 //inicialización de var, objetos, DOM
-const botonjugar=document.getElementById("jugar");
+const nickInput=document.getElementById("nick");
+const tamanoInput=document.getElementById("tamano");
+const formEntrada=document.getElementById("formEntrada");
 
 //Funciones de eventos
 function comprobarForm(){
-    console.log("comprobamos el formulario");
+    //comprobar cambios
+    if(nickInput.ariaValueMax.length==0)
+    {
+        console.log("No hay nick");
+    }
 }
 
-function ejecutarAccion(){
-    console.log("Ejecutar accion");
-    botonjugar.removeEventListener('click' ,ejecutarAccion);
-}
-
-botonjugar.addEventListener('click' ,comprobarForm);
-botonjugar.addEventListener('click' ,ejecutarAccion);
+//Inicio de carga de eventos
+formEntrada.addEventListener('submit' ,comprobarForm);
