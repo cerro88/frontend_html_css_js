@@ -9,11 +9,12 @@ const tamanoInput=document.getElementById("tamano");
 const formEntrada=document.getElementById("formEntrada");
 
 //Funciones de eventos
-function comprobarForm(){
+function comprobarForm(event){
     //comprobar cambios
-    if(nickInput.ariaValueMax.length==0)
+    if(nickInput.value.length==0)
     {
         console.log("No hay nick");
+        event.preventDefault();
     }
 }
 
