@@ -1,24 +1,20 @@
 /*
-*JS Para la comprobación de datos del Formulario de entrada
-*
+* JS Para la comprovación de datos del formulario de entrada
 *
 */
 
-//Capturar el valor del input nick
-const nickInput=document.getElementById('nick');
-console.log(nickInput.nodeType);
-//nickInput.value="Belén";
-console.log(nickInput.value);
+//inicialización de var, objetos, DOM
+const botonjugar=document.getElementById("jugar");
 
-
-//Capturar el valor del select
-const tamanoInput=document.getElementById('tamano');
-console.log(tamanoInput.nodeType);
-console.log(tamanoInput.value);
-console.log(tamanoInput.options[tamanoInput.selectedIndex].text);
-
-
-//Ejemplo sobre eventos
-function test(){
-    console.log("EVENTO SOBRE RATÓN")
+//Funciones de eventos
+function comprobarForm(){
+    console.log("comprobamos el formulario");
 }
+
+function ejecutarAccion(){
+    console.log("Ejecutar accion");
+    botonjugar.removeEventListener('click' ,ejecutarAccion);
+}
+
+botonjugar.addEventListener('click' ,comprobarForm);
+botonjugar.addEventListener('click' ,ejecutarAccion);
