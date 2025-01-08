@@ -51,3 +51,50 @@ function comprobarForm(event){
 
 //Inicio de carga de eventos
 formEntrada.addEventListener('submit' ,comprobarForm);
+
+
+
+//Corrección de Chat GPT para simplificar más el código
+
+// Inicialización de var, objetos, DOM
+//const nameInput = document.getElementById("name");
+//const emailInput = document.getElementById("email");
+//const edadInput = document.getElementById("edad");
+//const plataformaInput = document.getElementById("plataforma");
+//const videojuegoInput = document.getElementById("videojuego");
+
+//const valoresEdad = ["1", "2", "3", "4", "5", "6"];
+//const valoresPlataforma = ["1", "2", "3", "4", "5"];
+//
+//function mostrarError(mensaje, campo) {
+//    console.log(mensaje);
+//    campo.focus();
+//}
+//
+//// Funciones de eventos
+//function comprobarForm(event) {
+//    if (nameInput.value.length == 0) {
+//        mostrarError("No se ha definido un nombre", nameInput);
+//        event.preventDefault();
+//        return false;
+//    } else if (emailInput.value.length == 0) {
+//        mostrarError("No se ha definido ningún email", emailInput);
+//        event.preventDefault();
+//        return false;
+//    } else if (!valoresEdad.includes(edadInput.value)) {
+//        mostrarError("No se ha seleccionado un rango de edad", edadInput);
+//        event.preventDefault();
+//        return false;
+//    } else if (!valoresPlataforma.includes(plataformaInput.value)) {
+//        mostrarError("No se ha seleccionado ninguna plataforma", plataformaInput);
+//        event.preventDefault();
+//        return false;
+//    } else if (videojuegoInput.value.length == 0) {
+//        mostrarError("No se ha descrito ningún videojuego", videojuegoInput);
+//        event.preventDefault();
+//        return false;
+//    }
+//}
+//
+//// Inicio de carga de eventos
+//formEntrada.addEventListener("submit", comprobarForm);
