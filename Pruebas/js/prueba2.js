@@ -1,4 +1,4 @@
-//PRUEBA
+//PRUEBA 
 
 //Queremos poner a prueba lo que has aprendido y para ello seguiremos con nuestro 
 // formulario que recoge datos de los jugadores de videojuegos.
