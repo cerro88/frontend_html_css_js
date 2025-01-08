@@ -15,7 +15,13 @@ function comprobarForm(event){
     {
         console.log("No hay nick");
         event.preventDefault();
+        return false;
+    }else if(tamanoInput.value=="0"){
+        console.log("No se ha seleccionado tamaño de panel");
+        event.preventDefault();
+        return false;
     }
+    return true;
 }
 
 //Inicio de carga de eventos
