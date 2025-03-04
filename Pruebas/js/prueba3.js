@@ -55,6 +55,8 @@
 
 
 //Corrección de Chat GPT para simplificar más el código
+//Correción de la plataforma mastermind recomienda esta solución
+
 // Inicialización de var, objetos, DOM
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
