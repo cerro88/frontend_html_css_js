@@ -50,3 +50,14 @@ input[type="submit"]{
 footer{
     font-size: 15px;
 }
+
+
+/*id's*/
+
+#error{
+    text-align: center;
+    color: #fd0c49;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 14px;
+}
