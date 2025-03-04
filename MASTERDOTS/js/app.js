@@ -12,12 +12,12 @@ const error=document.getElementById("error");
 //Funciones de eventos
 function comprobarForm(event){
     //comprobar cambios
-    if(nickInput.value.length==0)
+    if(nickInput.value.match(/(?<!\S)^[0-9]/))
     {
         console.log("No hay nick");
         nickInput.focus();
         event.preventDefault();
-        error.innerText="El campo no puede estar vacio"
+        error.innerText="El campo no puede empezar por un número"
         return false;
     }else if(tamanoInput.value=="0"){
         console.log("No se ha seleccionado tamaño de panel");
