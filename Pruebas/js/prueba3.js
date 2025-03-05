@@ -7,6 +7,7 @@
 
 //Plataforma seleccionada
 
+
 // Inicialización de var, objetos, DOM
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
@@ -24,15 +25,15 @@ function mostrarError(mensaje, campo) {
 
 // Funciones de eventos
 function comprobarForm(event) {
-    if (nameInput.value.length == 0) {
+    if (nameInput.value.match(/(?<!\S)^[0-9]/)) {
         mostrarError("No se ha definido un nombre", nameInput);
         event.preventDefault();
-        error.innerText="El campo de nombre no puede estar vacio"
+        error.innerText="El campo de nombre no puede empezar por un número"
         return false;
-    } else if (emailInput.value.length == 0) {
-        mostrarError("No se ha definido ningún email", emailInput);
+    } else if (!emailInput.value.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+        mostrarError("Debe ingresar un email válido", emailInput);
         event.preventDefault();
-        error.innerText="El campo de email no puede estar vacio"
+        error.innerText="El email no es válido"
         return false;
     } else if (!valoresEdad.includes(edadInput.value)) {
         mostrarError("No se ha seleccionado un rango de edad", edadInput);
