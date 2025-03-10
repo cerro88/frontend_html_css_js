@@ -17,6 +17,7 @@ const videojuegoInput = document.getElementById("videojuego"); // Campo de entra
 const valoresEdad = ["1", "2", "3", "4", "5", "6"]; // Posibles valores permitidos para la edad
 const valoresPlataforma = ["1", "2", "3", "4", "5"]; // Posibles valores permitidos para la plataforma
 const error = document.getElementById("error"); // Elemento donde se mostrarán los errores
+const formEntrada = document.getElementById("formEntrada");
 
 // Función para mostrar errores y enfocar el campo incorrecto
 function mostrarError(mensaje, campo) {
