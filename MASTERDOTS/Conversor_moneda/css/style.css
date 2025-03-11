@@ -1,8 +1,7 @@
 body{
     background-color: #FFF;
     border: 2px solid red;
-    margin: 55px;
-    padding: 15px;
+    
     border-radius: 10px;
 }
 
@@ -14,11 +13,22 @@ header, footer{
 
 main{
     margin: 30px auto 0 auto;
+    padding: 0 50px;
     width: 300px;
 
 }
 
 
+input{
+    max-width: 140px;
+}
+
 #resultado input{
     max-width: 60px;
+}
+
+.grid{
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    padding: 2px 0;
 }
