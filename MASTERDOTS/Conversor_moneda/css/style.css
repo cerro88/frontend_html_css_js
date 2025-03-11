@@ -1,0 +1,24 @@
+body{
+    background-color: #FFF;
+    border: 2px solid red;
+    margin: 55px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+header, footer{
+    text-align: center;
+    margin: 50px auto 0 auto;
+    width: 300px;
+}
+
+main{
+    margin: 30px auto 0 auto;
+    width: 300px;
+
+}
+
+
+#resultado input{
+    max-width: 60px;
+}

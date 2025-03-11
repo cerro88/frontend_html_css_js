@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moneda</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--CABECERA-->
+    <header>
+       <div class="flex">
+        <img src="img/logo-conversor.png" alt="logo">
+        <h1>CONVERSOR DE MONEDA</h1>
+       </div>
+    </header>
+
+    <main>
+        <!--FORMULARIO INPUT-->
+        <form action="" id="form-conversor">
+            <div class="itemform">
+                <label for="moneda">Introduce la cantidad en €: </label>
+                <div>
+                    <input type="text" name="moneda" id="moneda" readonly>
+                    <button> Convertir </button>
+                </div>
+            </div>
+        </form>
+
+        <!--RESULTADOS DEL FORMULARIO-->
+        <div class="" id="resultado">
+            <div>
+                <label>Dólares (USD): </label>
+                <input type="text" name="dolar" id="dolar" readonly>
+            </div>
+            <div>
+                <label>Libras (GBP): </label>
+                <input type="text" name="libra" id="libra" readonly>
+            </div>
+            <div>
+                <label>Yenes (JPY): </label>
+                <input type="text" name="yenes" id="yenes" readonly>
+            </div>
+        </div>
+    </main>
+
+    <!--PIE DE PÁGINA-->
+    <footer>
+        <p>PROYECTO COVERSOR DE MONEDAS MASTERMIND</p>
+    </footer>
+
+    <!--js-->
+    <script src="js/app.js"></script>
+</body>
+</html>
