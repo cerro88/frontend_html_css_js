@@ -12,6 +12,9 @@ let resultadoYen = euros * tasaYen;
 
 /*capturar datos del user */
 document.getElementById("moneda").value
+
+
+/* */
 document.getElementById("dolar").value = resultadoDolar;
 document.getElementById("libra").value = resultadoLibra;
 document.getElementById("yenes").value = resultadoYen;
