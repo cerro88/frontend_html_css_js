@@ -26,3 +26,16 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.grid label{
+    text-align: start;
+}
+
+/*form*/
+form {
+    padding: 5vh;
+}
+
+.resultado{
+    
+}
