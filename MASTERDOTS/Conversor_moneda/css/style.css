@@ -1,34 +1,28 @@
 body{
-    background-color: #FFF;
-    border: 2px solid red;
-    
-    border-radius: 10px;
-}
-
-header, footer{
+    background-color: #fff;
+    max-width: 100vh;
     text-align: center;
-    margin: 50px auto 0 auto;
-    width: 300px;
-}
-
-main{
-    margin: 30px auto 0 auto;
-    padding: 0 50px;
-    width: 300px;
-
+    margin: auto;
 }
 
 
-input{
-    max-width: 140px;
+/*header*/
+.flex{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    border: 1px solid black;
+    margin-top: 1vh
 }
 
-#resultado input{
-    max-width: 60px;
+.flex h1{
+    padding: 5vh 0;
+    font-size: 3vh;
+    font-weight: 700;
 }
 
+/*main*/
 .grid{
-    display: grid ;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2px 0;
 }
