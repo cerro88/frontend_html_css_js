@@ -10,9 +10,8 @@ body{
 .flex{
     display: flex;
     justify-content: center;
-    padding: 2vh;
-    border: 1px solid black;
-    margin-top: 1vh
+    padding: 2vh; 
+
 }
 
 .flex h1{
@@ -33,9 +32,32 @@ body{
 
 /*form*/
 form {
-    padding: 5vh;
+    padding: 5vh; 
 }
 
-.resultado{
+input{
+    width: 20vh;
+}
+
+/*resultado*/
+
+.resultado{ 
+    padding: 8vh 0;
+}
+
+.resultado .grid{
+    padding: 1vh 20vh;
     
 }
+
+
+/*footer*/
+
+footer{
+    padding: 5vh;
+  
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around; 
+}
+
