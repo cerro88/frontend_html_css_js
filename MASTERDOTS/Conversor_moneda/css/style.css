@@ -1,18 +1,29 @@
 body{
     background-color: #fff;
-    max-width: 100vh;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
+    max-width: 100vh;
+    
 }
 
+main{
+    max-width: 100vh;
+    margin: 0 auto;
+    background-color: #fd0c49;
+}
 
 /*header*/
+header{
+    background-color: #b13535;
+}
+
 .flex{
     display: flex;
     justify-content: center;
     padding: 2vh; 
 
 }
+
 
 .flex h1{
     padding: 5vh 0;
@@ -23,7 +34,8 @@ body{
 /*main*/
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 .grid label{
@@ -33,21 +45,29 @@ body{
 /*form*/
 form {
     padding: 5vh; 
+
+}
+
+form .itemform{
+    padding: 0 10vh;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 input{
-    width: 20vh;
+    width: 10vh;
 }
+
 
 /*resultado*/
 
 .resultado{ 
-    padding: 8vh 0;
+    padding: 3vh 0;
 }
 
 .resultado .grid{
     padding: 1vh 20vh;
-    
 }
 
 
@@ -55,10 +75,11 @@ input{
 
 footer{
     padding: 5vh;
-  
+    max-width: 100vh;
     font-size: 10px;
     display: flex;
     justify-content: space-between; 
+    background-color: #e6597c;
 }
 
 #error{
