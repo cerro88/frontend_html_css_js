@@ -6,21 +6,26 @@ body{
     
 }
 
+.container{
+    border-radius: 10px;
+    background-color: aqua;
+}
+
 main{
     max-width: 100vh;
     margin: 0 auto;
-    background-color: #fd0c49;
+    border: 1px solid black;
+    padding: 0 15vh;
+    
 }
 
 /*header*/
-header{
-    background-color: #b13535;
-}
+
 
 .flex{
     display: flex;
     justify-content: center;
-    padding: 2vh; 
+  
 
 }
 
@@ -34,7 +39,8 @@ header{
 /*main*/
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    padding: 2vh 0 2vh 0;
     
 }
 
@@ -79,7 +85,7 @@ footer{
     font-size: 10px;
     display: flex;
     justify-content: space-between; 
-    background-color: #e6597c;
+   
 }
 
 #error{
