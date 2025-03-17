@@ -8,7 +8,7 @@ body{
 
 .container{
     border-radius: 10px;
-    background-color: aqua;
+    
 }
 
 main{
@@ -21,6 +21,11 @@ main{
 
 /*header*/
 
+header{
+    border: 1px solid black;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
 
 .flex{
     display: flex;
@@ -69,14 +74,6 @@ input{
 
 /*resultado*/
 
-.resultado{ 
-    padding: 3vh 0;
-}
-
-.resultado .grid{
-    padding: 1vh 20vh;
-}
-
 
 /*footer*/
 
@@ -86,6 +83,9 @@ footer{
     font-size: 10px;
     display: flex;
     justify-content: space-between; 
+    border: 1px solid black;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
    
 }
 
@@ -102,10 +102,13 @@ footer{
 
 
 @media (max-width: 485px){
-    .grid{
-        display: flex;
-        flex-direction: column;
+    input{
+        width: 8vh;
     }
 
-    main{}
+   
+
+    .container{
+        margin: 2vh;
+    }
 }
