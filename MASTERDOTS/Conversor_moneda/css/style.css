@@ -39,8 +39,9 @@ main{
 /*main*/
 .grid{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 15vh 12vh 0vh ;
     padding: 2vh 0 2vh 0;
+    justify-content: center;
     
 }
 
@@ -98,3 +99,13 @@ footer{
 
 }
 
+
+
+@media (max-width: 485px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{}
+}
