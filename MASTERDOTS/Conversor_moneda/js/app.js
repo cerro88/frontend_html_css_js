@@ -50,7 +50,7 @@ document.getElementById("convertir").addEventListener("click", function() {
     }
 
     // Si todo se cumple, hacer la conversión
-    error.innerText = ""; // Limpiar el mensaje de error
+    error.innerText = "";
 
     let resultadoDolar = cantidad * tasaDolar;
     let resultadoLibra = cantidad * tasaLibra;
