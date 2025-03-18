@@ -19,6 +19,9 @@
      </header>
  
      <main>
+        <div>
+            <p id="error"></p>
+        </div>
          <!--FORMULARIO INPUT-->
          <form action="" id="form-conversor">
              <div class="grid">
@@ -26,12 +29,10 @@
                  <input type="text" name="euros" id="euros">
                  <input type="button" value="Convertir" id="convertir">
              </div>
-             <div>
-                 <p id="error"></p>
-             </div>
+             
  
              <div class="grid">
-                 <label>Dólares (USD): </label>
+                 <label>Dólar (USD): </label>
                  <input type="text" name="dolar" id="dolar" readonly>
              </div>
              <div class="grid">
@@ -43,6 +44,8 @@
                  <input type="text" name="yenes" id="yenes" readonly>
              </div>
          </form>
+
+    
  
          <!--RESULTADOS DEL FORMULARIO-->
          <div class="resultado" id="resultado">
