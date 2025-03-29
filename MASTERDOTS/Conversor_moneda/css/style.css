@@ -1,78 +1,18 @@
+
+/* Estilos generales */
+
+
 body{
     background-color: #fff;
     text-align: center;
     margin: 0 auto;
     max-width: 100vh;
-    
 }
 
 img{
     margin-top: 2vh;
     width: 8vh;
     height: 8vh;
-}
-
-
-.container{
-    border-radius: 10px;
-    padding: 2vh ;
-    max-width: 55vh;
-    margin: 0 auto;
-    
-}
-
-main{
-    max-width: 100vh;
-    margin: 0 auto;
-    border: 1px solid black;
-    
-    
-}
-
-/*header*/
-
-header{
-    border: 1px solid black;
-    border-bottom: 0;
-    border-radius: 10px 10px 0 0;
-  
-}
-
-.flex{
-    display: flex;
-    justify-content: center;
-  
-
-}
-
-
-.flex h1{
-    padding: 5vh 0;
-    font-size: 3vh;
-    font-weight: 700;
-}
-
-/*main*/
-.grid{
-    display: grid;
-    grid-template-columns: 15vh 12vh 0vh ;
-    padding: 2vh 0 2vh 0;
-    justify-content: center;
-    
-}
-
-.grid label{
-    text-align: start;
-}
-
-/*form*/
-
-
-form .itemform{
-    padding: 0 10vh;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
 }
 
 input{
@@ -85,8 +25,67 @@ input[type="button"]{
 }
 
 
+/* Contenedores*/
 
-/*footer*/
+
+.container{
+    border-radius: 10px;
+    padding: 2vh ;
+    max-width: 55vh;
+    margin: 0 auto;
+}
+
+main{
+    max-width: 100vh;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+
+/*Header */
+
+
+header{
+    border: 1px solid black;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex h1{
+    padding: 5vh 0;
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+
+/*Formulario y estructura del grid*/
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 15vh 12vh 0vh ;
+    padding: 2vh 0 2vh 0;
+    justify-content: center;
+}
+
+.grid label{
+    text-align: start;
+}
+
+form .itemform{
+    padding: 0 10vh;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+/* Pie de página*/
 
 footer{
     padding: 5vh;
@@ -97,8 +96,10 @@ footer{
     border: 1px solid black;
     border-top: 0;
     border-radius: 0 0 10px 10px;
-   
 }
+
+
+/* Mensajes de error*/
 
 #error{
     text-align: center;
@@ -106,20 +107,19 @@ footer{
     font-weight: 300;
     font-size: 14px;
     padding: 2vh
-
 }
 
 
+/* Responsive / Media Queries*/
 
 @media (max-width: 485px){
     input{
         width: 8vh;
-
     }
 
-   .grid{
-     grid-template-columns: 10vh 13vh 5vh
-   }
+    .grid{
+        grid-template-columns: 10vh 13vh 5vh
+    }
 
     .container{
         margin: 2vh;
@@ -138,5 +138,4 @@ footer{
     input[type="button"]{
         width: 60px;
     }
-   
 }
