@@ -1,7 +1,7 @@
-//Valores en €
-const tasaDolar= 0.92;
-const tasaLibra= 1.19;
-const tasaYen= 0.0062;
+//Valores en € (06/04/2025)
+const tasaDolar= 1.08985;
+const tasaLibra= 0.848138;
+const tasaYen= 158.571;
 
 
 //Inicialización de variables y obtención de elementos del DOM
@@ -23,6 +23,13 @@ document.getElementById("convertir").addEventListener("click", function() {
         eurosInput.focus();
         error.innerText = "Debe expecificar una cantidad en euros";
 
+    }
+
+    //validar que no hay símbolos raros
+    else if (/[^0-9.,]/.test(eurosInput.value)) {
+        console.log("El valor contiene caracteres no permitidos");
+        eurosInput.focus();
+        error.innerText = "Solo se permiten números, puntos o comas";
     }
     
     //validar que el usuario inserta un número
