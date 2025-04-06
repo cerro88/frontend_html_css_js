@@ -4,18 +4,27 @@ const tasaLibra= 0.848138;
 const tasaYen= 158.571;
 
 
+
 //Inicialización de variables y obtención de elementos del DOM
+//Captura el campo dnde el user escribe la cantidad de euros a convertir
 const eurosInput = document.getElementById("euros");
 
 //Captura el elemento donde se mostrarán los mensajes de error
 const error = document.getElementById("error");
 
-//Busca el botón convertir y agrega un evento al botón para cuando el usuario haga clic
+
+
+
+//Busca el botón convertir y agrega un evento al botón para cuando el usuario haga clic que ejecuta la siguiente función
 document.getElementById("convertir").addEventListener("click", function() {
+
+    
     
     //pasar de string a number 
     //usar parseInt no incluye decimales por eso se usa parseFloat 
     let cantidad = parseFloat(eurosInput.value);
+
+
 
     //validar que el campo no esta vacio
     if (eurosInput.value.trim() === "") {
