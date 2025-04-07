@@ -36,6 +36,7 @@ document.getElementById("convertir").addEventListener("click", function() {
     }
 
     //validar que no hay símbolos 
+    //expresión regular regExp
     else if (/[^0-9.,]/.test(eurosInput.value)) {
         eurosInput.focus();
         error.innerText = "Solo se permiten números, puntos o comas";
