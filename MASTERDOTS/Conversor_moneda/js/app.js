@@ -28,15 +28,15 @@ document.getElementById("convertir").addEventListener("click", function() {
 
     //validar que el campo no esta vacio
     if (eurosInput.value.trim() === "") {
+        //console.log ineccesarios para el código (solo para comprovaciones en desarrollo)
         console.log("No se ha especificado cantidad");
         eurosInput.focus();
         error.innerText = "Debe expecificar una cantidad en euros";
 
     }
 
-    //validar que no hay símbolos raros
+    //validar que no hay símbolos 
     else if (/[^0-9.,]/.test(eurosInput.value)) {
-        console.log("El valor contiene caracteres no permitidos");
         eurosInput.focus();
         error.innerText = "Solo se permiten números, puntos o comas";
     }
@@ -44,7 +44,6 @@ document.getElementById("convertir").addEventListener("click", function() {
     //validar que el usuario inserta un número
     //is not a number
     else if (isNaN(cantidad)){
-        console.log("La cantidad ingresada no es un número válido");
         eurosInput.focus();
         error.innerText = "Debe ingresar un número válido";
         
@@ -52,7 +51,6 @@ document.getElementById("convertir").addEventListener("click", function() {
     
     //validar que no es menor a 0
     else if (cantidad < 0 ){
-        console.log("No se pueden ingresar cantidades negativas");
         eurosInput.focus();
         error.innerText = "La cantidad debe ser mayor a 0";
 
